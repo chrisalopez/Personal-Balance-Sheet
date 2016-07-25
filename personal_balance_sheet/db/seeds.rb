@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+# This will multiply the comment 50x's and will be inputted in the database.
+# 50.times do |i|
+#   Comment.create(comments: "Hello bob", user_id: 1)
+# end
