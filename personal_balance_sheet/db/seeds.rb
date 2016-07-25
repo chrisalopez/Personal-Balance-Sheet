@@ -10,3 +10,6 @@
 # 50.times do |i|
 #   Comment.create(comments: "Hello bob", user_id: 1)
 # end
+# 10.times do
+#   Comment.create(comments: "Hello BOB", user_id: 1)
+# end
