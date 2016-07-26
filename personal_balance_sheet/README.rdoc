@@ -1,11 +1,13 @@
-== README
+== README - Personal Balance Sheet on Rails
+
+This app helps users to manage their monthly income, by inputing their monthly income, expenses, and getting the result of all of that calcution by having a Balance. After this happens, they will be prompted to their level of the National Average and links on how to improve/maintain their current spending habits.
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version 4.0.0
 
 * System dependencies
 
