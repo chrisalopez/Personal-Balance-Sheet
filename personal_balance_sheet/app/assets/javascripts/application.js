@@ -36,6 +36,28 @@ if (!exp7) {
 };
 
 _balance.value = _income - (exp1 + exp2 + exp3 + exp4 + exp5 + exp6 + exp7);
+};
+
+function onload() {
+    var month = new Array();
+    month[0] = "January";
+    month[1] = "February";
+    month[2] = "March";
+    month[3] = "April";
+    month[4] = "May";
+    month[5] = "June";
+    month[6] = "July";
+    month[7] = "August";
+    month[8] = "September";
+    month[9] = "October";
+    month[10] = "November";
+    month[11] = "December";
+
+    var d = new Date();
+    var n = month[d.getMonth()];
+    document.getElementById("_month").innerHTML = n;
+}
+
 // _income.onblur = function() {
 
 //   _balance = (0 - parseInt(this.value,10));
@@ -62,7 +84,7 @@ _balance.value = _income - (exp1 + exp2 + exp3 + exp4 + exp5 + exp6 + exp7);
 //   _balance = (parseInt(_balance,10) - parseInt(this.value,10));
 // };
 
-};
+
 // _balance.onblur = function() {
 //   _balance = (parseInt(_balance,10) - parseInt(this.value,10));
 // };

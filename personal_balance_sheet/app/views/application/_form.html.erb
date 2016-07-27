@@ -3,7 +3,7 @@
 <div id="myform">
 <%= form_tag("/categories", method: "post") do %>
   Date: <br>
-  <input type="date" name="date" id="date"><br>
+  <input type="date" name="date" id="date"><br><br><br>
   Monthly Income: <br>
   <input type="integer" name="monthly_income" id="monthly_income" onchange="updateForm()"><br>
   Rent: <br>
@@ -19,13 +19,13 @@
   Food: <br>
   <input type="integer" name="food" id="food" onchange="updateForm()"><br>
   Misc: <br>
-  <input type="integer" name="misc" id="misc" onchange="updateForm()"><br>
+  <input type="integer" name="misc" id="misc" onchange="updateForm()"><br><br>
   Balance: <br>
-  <input type="integer" name="balance" id="balance" readonly><br>
+  <input type="integer" name="balance" id="balance" readonly><br><br>
   Your Comment for this MONTH: <br>
   <textarea name="comment" id="comment" rows="10" tabindex="4"  required=""></textarea><br>
 
   <!-- <input type="button" name="button" value="Calculate" onclick="myform"> -->
-  <input type="submit" value="Send money">
+  <input type="submit" value="Save this Information">
 <% end %>
 </div>
