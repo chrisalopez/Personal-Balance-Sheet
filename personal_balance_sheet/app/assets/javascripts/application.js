@@ -56,7 +56,7 @@ function onload() {
     var d = new Date();
     var n = month[d.getMonth()];
     document.getElementById("_month").innerHTML = n;
-}
+};
 
 // _income.onblur = function() {
 

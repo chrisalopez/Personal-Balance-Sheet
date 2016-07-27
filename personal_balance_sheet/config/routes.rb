@@ -1,18 +1,15 @@
 Rails.application.routes.draw do
+  root to: "home#index"
 
-  get 'categories/create'
+  get '/home/index'
+  get '/form/edit'
+  post '/form/edit'
 
   devise_for :users
-  get '/home/index'
-
-  root to: "home#index"
 
 # Matches a url pattern to one or more routes.
   # match ':controller(/:action(/:id))', :via => :get
 
-  get '/users/:id', to: 'users#show', as:'user'
-
-  post '/categories', to:'categories#create'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
