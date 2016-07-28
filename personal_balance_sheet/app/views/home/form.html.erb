@@ -2,35 +2,32 @@
 
 <h1>Personal Balance Sheet</h1>
 
-<div id="myform">
-<%= form_tag("/categories", method: "post") do %>
+<%= form_for @datainput, url: '/home/new' do |f| %>
   Date: <br>
-  <input type="date" name="date" id="date"><br><br><br>
+  <%= f.date_field :date %><br><br><br>
   Monthly Income: <br>
-  <input type="integer" name="monthly_income" id="monthly_income" onchange="updateForm()"><br>
+  <%= f.number_field :income, {:id => "income", :onchange => "updateForm()"} %><br>
   Rent: <br>
-  <input type="integer" name="rent" id="rent" onchange="updateForm()"><br>
+  <%= f.number_field :rent, {:id => "rent", :onchange => "updateForm()"} %><br>
   Loans: <br>
-  <input type="integer" name="loans" id="loans" onchange="updateForm()"><br>
+  <%= f.number_field :loans, {:id => "loans", :onchange => "updateForm()"} %><br>
   Insurance: <br>
-  <input type="integer" name="insurance" id="insurance" onchange="updateForm()"><br>
+  <%= f.number_field :insurance, {:id => "insurance", :onchange => "updateForm()"} %><br>
   Utilities: <br>
-  <input type="integer" name="utilities" id="utilities" onchange="updateForm()"><br>
+  <%= f.number_field :utilities, {:id => "utilities", :onchange => "updateForm()"} %><br>
   Entertainment: <br>
-  <input type="integer" name="entertainment" id="entertainment" onchange="updateForm()"><br>
+  <%= f.number_field :entertainment, {:id => "entertainment", :onchange => "updateForm()"} %><br>
   Food: <br>
-  <input type="integer" name="food" id="food" onchange="updateForm()"><br>
+  <%= f.number_field :food, {:id => "food", :onchange => "updateForm()"} %><br>
   Misc: <br>
-  <input type="integer" name="misc" id="misc" onchange="updateForm()"><br><br>
+  <%= f.number_field :misc, {:id => "misc", :onchange => "updateForm()"}%><br><br>
   Balance: <br>
-  <input type="integer" name="balance" id="balance" readonly><br><br>
-  Your Comment for this MONTH: <br>
-  <textarea name="comment" id="comment" rows="10" tabindex="4"  required=""></textarea><br>
+  <%= f.number_field :balance, {:id => "balance", :readonly => "true"} %><br><br>
+  What happened this Month? <br>
+  <%= f.text_area :comment, size: "60x12" %><br>
+  <%= f.submit "Save this Information" %>
 
-  <!-- <input type="button" name="button" value="Calculate" onclick="myform"> -->
-  <input type="submit" value="Save this Information">
 <% end %>
-</div>
 
 <script>
 window.onload = function () {

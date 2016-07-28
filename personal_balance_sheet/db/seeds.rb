@@ -1,4 +1,4 @@
-DataInput.create(income:1000, rent: 100, utilities: 50, loans: 300, insurance: 100, entertainment:100, food: 50, misc: 100, user_id: 1, date: 'July 1, 2016', comment: "Testing")
+DataInput.create(income:1000, rent: 100, utilities: 50, loans: 300, insurance: 100, entertainment:100, food: 50, misc: 100, user_id: 1, balance: 0, date: 'July 1, 2016', comment: "Testing")
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
 #

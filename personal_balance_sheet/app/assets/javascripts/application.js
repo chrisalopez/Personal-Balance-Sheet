@@ -1,6 +1,6 @@
 function updateForm() {
 
-var _income = parseInt(document.getElementById('monthly_income').value);
+var _income = parseInt(document.getElementById('income').value);
 var exp1 = parseInt(document.getElementById('rent').value);
 var exp2 = parseInt(document.getElementById('loans').value);
 var exp3 = parseInt(document.getElementById('insurance').value);
