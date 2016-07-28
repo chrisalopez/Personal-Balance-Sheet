@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get '/home/index'
   get '/home/form'
   post '/home/submit'
+  delete '/home/:id' => 'home#destroy'
 
 
 
