@@ -1,3 +1,11 @@
+body {
+  background-color: navajowhite;
+}
+
+.money_form {
+  background-color: darkseagreen;
+  border: black double;
+}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.

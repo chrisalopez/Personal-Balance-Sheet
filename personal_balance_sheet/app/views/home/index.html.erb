@@ -1,3 +1,29 @@
-<h1>Home#index</h1>
-<p>say what?!</p>
-<p>Find me in app/views/home/index.html.erb</p>
+<%= link_to '<button type="button">New Finance Sheet</button>'.html_safe, home_form_path %>
+
+<h1>Welcome to your Financial Planning Page</h1>
+
+<% @datainputs.each do |data_input| %>
+  <div class="money_form">
+  <h3>Date</h3>
+  <div><%= data_input.date %></div>
+  <h3>Income</h3>
+  <div><%= data_input.income %></div>
+  <h3>Rent</h3>
+  <div><%= data_input.rent %></div>
+  <h3>Loans</h3>
+  <div><%= data_input.loans %></div>
+  <h3>Utilities</h3>
+  <div><%= data_input.utilities %></div>
+  <h3>Entertainment</h3>
+  <div><%= data_input.entertainment %></div>
+  <h3>Food</h3>
+  <div><%= data_input.food %></div>
+  <h3>Misc</h3>
+  <div><%= data_input.misc %></div>
+  <h3>Balance</h3>
+  <div><%= data_input.balance %></div>
+  <h3>Comment</h3>
+  <div><%= data_input.comment %></div><br><br><br>
+  <%= button_to('Delete This Sheet', '/home/' + data_input.id.to_s, method: "delete", remote: true, data: { confirm: 'Are you sure?', disable_with: 'loading...' }) %>
+  </div>
+<%end %>

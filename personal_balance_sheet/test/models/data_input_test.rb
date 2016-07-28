@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class MoneyInputTest < ActiveSupport::TestCase
+class DataInputTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

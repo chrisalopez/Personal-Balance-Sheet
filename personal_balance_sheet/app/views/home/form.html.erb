@@ -1,0 +1,36 @@
+<h1>You are preparing your <span id="_month"></span></h1>
+
+<h1>Personal Balance Sheet</h1>
+
+<%= form_for @datainput, url: '/home/submit', html: {class: "money_form"} do |f| %>
+  <h3>Date:</h3> <br>
+  <%= f.date_field :date %><br><br><br>
+  <h3>Monthly Income:</h3> <br>
+  <%= f.number_field :income, {:id => "income", :onchange => "updateForm()"} %><br>
+  <h3>Rent:</h3> <br>
+  <%= f.number_field :rent, {:id => "rent", :onchange => "updateForm()"} %><br>
+  <h3>Loans:</h3> <br>
+  <%= f.number_field :loans, {:id => "loans", :onchange => "updateForm()"} %><br>
+  <h3>Insurance:</h3> <br>
+  <%= f.number_field :insurance, {:id => "insurance", :onchange => "updateForm()"} %><br>
+  <h3>Utilities:</h3> <br>
+  <%= f.number_field :utilities, {:id => "utilities", :onchange => "updateForm()"} %><br>
+  <h3>Entertainment:</h3> <br>
+  <%= f.number_field :entertainment, {:id => "entertainment", :onchange => "updateForm()"} %><br>
+  <h3>Food:</h3> <br>
+  <%= f.number_field :food, {:id => "food", :onchange => "updateForm()"} %><br>
+  <h3>Misc:</h3> <br>
+  <%= f.number_field :misc, {:id => "misc", :onchange => "updateForm()"}%><br><br>
+  <h3>Balance:</h3> <br>
+  <%= f.number_field :balance, {:id => "balance", :readonly => "true"} %><br><br>
+  <h3>What happened this Month?</h3> <br>
+  <%= f.text_area :comment, size: "60x12" %><br>
+  <%= f.submit "Save this Information" %>
+  <%= link_to '<button type="button">Cancel</button>'.html_safe, home_index_path %>
+<% end %>
+
+<script>
+window.onload = function () {
+  onload()
+}
+</script>

@@ -1,11 +1,18 @@
 Rails.application.routes.draw do
-
-  devise_for :users
-  # get 'home/index'
-
   root to: "home#index"
 
-  match ':controller(/:action(/:id))', :via => :get
+  get '/home/index'
+  get '/home/form'
+  post '/home/submit'
+  delete '/home/:id' => 'home#destroy'
+
+
+
+  devise_for :users
+
+# Matches a url pattern to one or more routes.
+  # match ':controller(/:action(/:id))', :via => :get
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
