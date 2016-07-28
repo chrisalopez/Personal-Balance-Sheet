@@ -2,28 +2,28 @@
 
 <h1>Personal Balance Sheet</h1>
 
-<%= form_for @datainput, url: '/home/index' do |f| %>
-  Date: <br>
+<%= form_for @datainput, url: '/home/submit', html: {class: "money_form"} do |f| %>
+  <h3>Date:</h3> <br>
   <%= f.date_field :date %><br><br><br>
-  Monthly Income: <br>
+  <h3>Monthly Income:</h3> <br>
   <%= f.number_field :income, {:id => "income", :onchange => "updateForm()"} %><br>
-  Rent: <br>
+  <h3>Rent:</h3> <br>
   <%= f.number_field :rent, {:id => "rent", :onchange => "updateForm()"} %><br>
-  Loans: <br>
+  <h3>Loans:</h3> <br>
   <%= f.number_field :loans, {:id => "loans", :onchange => "updateForm()"} %><br>
-  Insurance: <br>
+  <h3>Insurance:</h3> <br>
   <%= f.number_field :insurance, {:id => "insurance", :onchange => "updateForm()"} %><br>
-  Utilities: <br>
+  <h3>Utilities:</h3> <br>
   <%= f.number_field :utilities, {:id => "utilities", :onchange => "updateForm()"} %><br>
-  Entertainment: <br>
+  <h3>Entertainment:</h3> <br>
   <%= f.number_field :entertainment, {:id => "entertainment", :onchange => "updateForm()"} %><br>
-  Food: <br>
+  <h3>Food:</h3> <br>
   <%= f.number_field :food, {:id => "food", :onchange => "updateForm()"} %><br>
-  Misc: <br>
+  <h3>Misc:</h3> <br>
   <%= f.number_field :misc, {:id => "misc", :onchange => "updateForm()"}%><br><br>
-  Balance: <br>
+  <h3>Balance:</h3> <br>
   <%= f.number_field :balance, {:id => "balance", :readonly => "true"} %><br><br>
-  What happened this Month? <br>
+  <h3>What happened this Month?</h3> <br>
   <%= f.text_area :comment, size: "60x12" %><br>
   <%= f.submit "Save this Information" %>
   <%= link_to '<button type="button">Cancel</button>'.html_safe, home_index_path %>

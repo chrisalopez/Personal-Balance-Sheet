@@ -2,3 +2,7 @@
 
 <h1>Welcome to your Financial Planning Page</h1>
 
+<% @datainputs.each do |data_input| %>
+  <div>Income</div>
+  <div><%= data_input.income %></div>
+<%end %>
