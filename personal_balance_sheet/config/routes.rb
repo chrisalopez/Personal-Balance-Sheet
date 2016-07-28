@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   get '/home/form'
   post '/home/submit'
 
+
+
   devise_for :users
 
 # Matches a url pattern to one or more routes.

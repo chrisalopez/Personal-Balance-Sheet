@@ -9,5 +9,10 @@ class HomeController < ApplicationController
   end
 
   def submit
+
+  end
+
+  def post
+    # redirect_to '/home/index', alert: "Watch it, mister!"
   end
 end
