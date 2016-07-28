@@ -2,8 +2,8 @@ Rails.application.routes.draw do
   root to: "home#index"
 
   get '/home/index'
-  get '/form/edit'
-  post '/form/edit'
+  get '/home/form'
+  post '/home/submit'
 
   devise_for :users
 

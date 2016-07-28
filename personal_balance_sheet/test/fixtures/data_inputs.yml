@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  rent: 1
+  utilities: 1
+  loans: 1
+  insurance: 1
+  entertainment: 1
+  food: 1
+  misc: 1
+  user_id: 1
+  date: 2016-07-27
+  comment: MyText
+
+two:
+  rent: 1
+  utilities: 1
+  loans: 1
+  insurance: 1
+  entertainment: 1
+  food: 1
+  misc: 1
+  user_id: 1
+  date: 2016-07-27
+  comment: MyText
