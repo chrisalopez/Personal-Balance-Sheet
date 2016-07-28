@@ -24,6 +24,6 @@
   <div><%= data_input.balance %></div>
   <h3>Comment</h3>
   <div><%= data_input.comment %></div><br><br><br>
-  <%= button_to('Destroy', '/home/' + data_input.id.to_s, method: "delete", remote: true, data: { confirm: 'Are you sure?', disable_with: 'loading...' }) %>
+  <%= button_to('Delete This Sheet', '/home/' + data_input.id.to_s, method: "delete", remote: true, data: { confirm: 'Are you sure?', disable_with: 'loading...' }) %>
   </div>
 <%end %>
