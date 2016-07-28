@@ -26,7 +26,7 @@
   What happened this Month? <br>
   <%= f.text_area :comment, size: "60x12" %><br>
   <%= f.submit "Save this Information" %>
-
+  <%= link_to '<button type="button">Cancel</button>'.html_safe, home_index_path %>
 <% end %>
 
 <script>
